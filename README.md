@@ -1,2 +1,2 @@
-# yii2-barcode-generator
+# ON DEVELOPMENT
 The jQuery barcode generator for Yii2
