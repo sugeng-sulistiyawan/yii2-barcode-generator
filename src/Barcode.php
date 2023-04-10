@@ -100,6 +100,11 @@ class Barcode extends Widget
 	public $format;
 
 	/**
+	 * @var string default `svg` available svg, img, canvas
+	 */
+	public $tag = 'svg';
+
+	/**
 	 * @var string default `self::CODE128`
 	 */
 	public $defaultFormat = self::CODE128;
@@ -166,6 +171,6 @@ class Barcode extends Widget
 
 		$this->view->registerJs("JsBarcode(\"#{$this->options['id']}\", \"{$this->value}\", {$pluginOptions});");
 
-		return Html::tag('svg', '', $this->options);
+		return Html::tag($this->tag, '', $this->options);
 	}
 }

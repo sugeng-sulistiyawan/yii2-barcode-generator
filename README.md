@@ -78,8 +78,8 @@ Barcode::widget([
 use diecoding\barcode\generator\Barcode;
 
 Barcode::widget([
-  'value'  => '1234',
-  'format' => Barcode::PHARMACODE,
+  'value'         => '1234',
+  'format'        => Barcode::PHARMACODE,
   'pluginOptions' => [
     'lineColor'    => "#0aa",
     'width'        => 4,
@@ -90,8 +90,18 @@ Barcode::widget([
 
 // Enable encoding CODE128 as GS1-128/EAN-128.
 Barcode::widget([
-  'value'  => '12345678',
-  'format' => Barcode::CODE128C,
+  'value'         => '12345678',
+  'format'        => Barcode::CODE128C,
+  'pluginOptions' => [
+    'ean128' => true,
+  ]
+]);
+
+// Change Element Tag, default svg, available svg, img, canvas
+Barcode::widget([
+  'tag'           => 'img',
+  'value'         => '12345678',
+  'format'        => Barcode::CODE128C,
   'pluginOptions' => [
     'ean128' => true,
   ]
