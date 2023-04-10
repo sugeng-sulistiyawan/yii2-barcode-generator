@@ -1,0 +1,53 @@
+{
+	"name": "diecoding/yii2-barcode-generator",
+	"description": "The JavaScript Barcode Generator for Yii2",
+	"authors": [
+		{
+			"name": "Sugeng Sulistiyawan",
+			"email": "sugeng.sulistiyawan@gmail.com"
+		}
+	],
+	"type": "yii2-extension",
+	"keywords": [
+		"yii2",
+		"widget",
+		"barcode-generator",
+		"javascript-plugin",
+		"barcode",
+		"javascript"
+	],
+	"license": "MIT",
+	"support": {
+		"issues": "https://github.com/sugeng-sulistiyawan/yii2-barcode-generator/issues",
+		"source": "https://github.com/sugeng-sulistiyawan/yii2-barcode-generator"
+	},
+	"require": {
+		"php": ">=7.4.0",
+		"yiisoft/yii2": "~2.0",
+		"npm-asset/jsbarcode": "~3.11"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~9.5.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"diecoding\\barcode\\generator\\": "src/"
+		}
+	},
+    "autoload-dev": {
+        "psr-4": {
+            "diecoding\\barcode\\generator\\tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
+}
