@@ -12,7 +12,7 @@
 		"yii2",
 		"widget",
 		"barcode-generator",
-		"javascript-plugin",
+		"javascript-library",
 		"barcode",
 		"javascript"
 	],
