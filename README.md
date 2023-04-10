@@ -44,6 +44,8 @@ or add to the require section of your `composer.json` file.
 
 ## Usage
 
+> Wiki as JavaScript Code at https://github.com/lindell/JsBarcode/wiki#barcodes
+
 ### Simple Usage
 
 ```php
@@ -56,13 +58,13 @@ Barcode::widget([
 
 // CODE128
 Barcode::widget([
-  'value' => 'Example1234',
+  'value'  => 'Example1234',
   'format' => Barcode::CODE128
 ]);
 
 // CODE128A
 Barcode::widget([
-  'value' => "EXAMPLE\n1234",
+  'value'  => "EXAMPLE\n1234",
   'format' => Barcode::CODE128A
 ]);
 
@@ -96,4 +98,5 @@ Barcode::widget([
 ]);
 
 // ...
+
 ```
