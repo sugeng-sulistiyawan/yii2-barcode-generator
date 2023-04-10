@@ -64,7 +64,7 @@ Barcode::widget([
 
 // CODE128A
 Barcode::widget([
-  'value'  => "EXAMPLE\n1234",
+  'value'  => 'EXAMPLE\n1234',
   'format' => Barcode::CODE128A
 ]);
 
@@ -81,7 +81,7 @@ Barcode::widget([
   'value'         => '1234',
   'format'        => Barcode::PHARMACODE,
   'pluginOptions' => [
-    'lineColor'    => "#0aa",
+    'lineColor'    => '#0aa',
     'width'        => 4,
     'height'       => 40,
     'displayValue' => false
