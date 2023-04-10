@@ -49,7 +49,25 @@ or add to the require section of your `composer.json` file.
 ```php
 use diecoding\barcode\generator\Barcode;
 
-Barcode::widget();
+// CODE128 (auto) is the default mode
+Barcode::widget([
+  'value' => 'Hi world!',
+]);
+
+// CODE128
+Barcode::widget([
+  'value' => 'Example1234',
+  'format' => Barcode::CODE128
+]);
+
+// CODE128A
+Barcode::widget([
+  'value' => "EXAMPLE\n1234",
+  'format' => Barcode::CODE128A
+]);
+
+// ...
+
 ```
 
 ### Advanced Usage
@@ -58,6 +76,24 @@ Barcode::widget();
 use diecoding\barcode\generator\Barcode;
 
 Barcode::widget([
-    
+  'value'  => '1234',
+  'format' => Barcode::PHARMACODE,
+  'pluginOptions' => [
+    'lineColor'    => "#0aa",
+    'width'        => 4,
+    'height'       => 40,
+    'displayValue' => false
+  ]
 ]);
+
+// Enable encoding CODE128 as GS1-128/EAN-128.
+Barcode::widget([
+  'value'  => '12345678',
+  'format' => Barcode::CODE128C,
+  'pluginOptions' => [
+    'ean128' => true,
+  ]
+]);
+
+// ...
 ```

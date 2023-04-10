@@ -6,31 +6,24 @@ use yii\web\AssetBundle;
 use yii\web\YiiAsset;
 
 /**
- * ToastrAsset represents a collection of asset files, such as CSS, JS, images.
+ * BarcodeAsset represents a collection of asset files, such as CSS, JS, images.
  * 
  * @link [sugeng-sulistiyawan.github.io](sugeng-sulistiyawan.github.io)
  * @author Sugeng Sulistiyawan <sugeng.sulistiyawan@gmail.com>
  * @copyright Copyright (c) 2023
  */
-class ToastrAsset extends AssetBundle
+class BarcodeAsset extends AssetBundle
 {
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@npm/toastr/build';
-
-    /**
-     * @inheritdoc
-     */
-    public $css = [
-        'toastr.min.css',
-    ];
+    public $sourcePath = '@npm/jsbarcode/dist';
 
     /**
      * @inheritdoc
      */
     public $js = [
-        'toastr.min.js',
+        'JsBarcode.all.min.js',
     ];
 
     /**
