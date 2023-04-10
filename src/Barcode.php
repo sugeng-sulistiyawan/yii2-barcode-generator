@@ -82,7 +82,7 @@ class Barcode extends Widget
 
 	/** 
 	 * Codabar is an old barcode type that can encode numbers 
-	 * and a number of special characters (–, $, :, /, +, .).
+	 * and a number of special characters (-, $, :, /, +, .).
 	 * 
 	 * You can set start and stop characters to A, B, C or D 
 	 * but if no start and stop character is defined A will be used.
