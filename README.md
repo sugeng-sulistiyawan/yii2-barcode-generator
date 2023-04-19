@@ -107,6 +107,18 @@ Barcode::widget([
   ]
 ]);
 
+// Change Element Tag, add custom style element tag, hide value text
+Barcode::widget([
+  'tag'     => 'img',
+  'value'   => '12345678',
+  'options' => [
+      'style' => "width: 4cm; height: 1cm;",
+  ],
+  'pluginOptions' => [
+      'displayValue' => false,
+  ],
+]);
+
 // ...
 
 ```
