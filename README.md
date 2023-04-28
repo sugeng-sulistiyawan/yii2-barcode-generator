@@ -32,7 +32,7 @@ composer require diecoding/yii2-barcode-generator "^1.0"
 
 or add to the require section of your `composer.json` file.
 
-```
+```shell
 "diecoding/yii2-barcode-generator": "^1.0"
 ```
 
@@ -122,3 +122,7 @@ Barcode::widget([
 // ...
 
 ```
+
+---
+
+Read more docs: https://sugengsulistiyawan.my.id/docs/opensource/yii2/barcode-generator/
